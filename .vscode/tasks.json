@@ -1,0 +1,32 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Build (DEBUG)",
+            "command": "make",
+            "options": {
+                "cwd": "${workspaceFolder}/build/"
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "type": "shell",
+            "label": "Build Makefile",
+            "command": "cmake",
+            "args": [
+                "-S",
+                "${workspaceFolder}/",
+                "-B",
+                "${workspaceFolder}/build/",
+                "-DCMAKE_BUILD_TYPE=Debug"
+            ],
+            "group": "build",
+            "problemMatcher": []
+        }
+    ]
+}

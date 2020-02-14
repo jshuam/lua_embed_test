@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run (DEBUG)",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/lua_embed_test",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "Build (DEBUG)"
+        }
+    ]
+}
